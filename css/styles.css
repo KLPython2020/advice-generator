@@ -3,7 +3,7 @@
     --card-bg: hsl(217, 19%, 24%);
     --quote:hsl(193, 38%, 86%);
     --quote-num: hsl(150, 100%, 66%);
-    --font-size: 18px;
+    --font-size: 28wv;
     --font-family: 'Manrope', sans-serif;
     --font-weight:800;
 }
@@ -30,14 +30,15 @@ main{
 
 .container{
     text-align: center;
-    height: auto;
+    height: 300px;
     max-width: 400px;
     background-color: var(--card-bg);
     margin: auto;
-    padding: 2em;
+    padding: 1em 2em;
     display: grid;
     place-items: center;
-    grid-gap: 10% 10%;
+    border-radius: var(--radius-3);
+    position:absolute;
 }
 #quote-number{
     color: var(--quote-num);
@@ -48,7 +49,6 @@ main{
     font-size: var(--font-size);
     color: var(--quote);
     font-weight: var(--font-weight);
-    margin-bottom: 0.5em;
 }
 #button{
     display: grid;
@@ -56,29 +56,18 @@ main{
     height: 50px;
     border-radius: 50px;
     background-color: var(--quote-num);
-    margin-top: 4px;
+    margin-top: 300px;
+    position: absolute;
 }
 .button{
     display: grid;
     place-items: center;
 }
-
-/* hr {
-    width: 100%;
-    border: none;
-    border-top: 1px solid var(--quote);
-    color: #333;
-    overflow: visible;
-    text-align: center;
-    height: 5px;
+.button:hover{
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 0 3px 2px var(--quote-num);
 }
-
-hr:after {
-    background: var(--card-bg);
-    content: "''";
-    font-size: 28px;
-    padding: 0 4px;
-    position: relative;
-    top: -13px;
-    color: var(--quote)
-} */
+.button:active{
+    transform: translateY(4px);
+}
