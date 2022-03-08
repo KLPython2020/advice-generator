@@ -52,8 +52,6 @@ I ended up using the throttling technique to manage how often will the click eve
 
 I also found a quick reference for styling the animation of the button from [Open-props.style](https://open-props.style/) created by [Adam Argyle](https://github.com/argyleink).
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
 
 ### Continued development
 
