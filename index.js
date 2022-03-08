@@ -31,7 +31,7 @@ async function getAdvice(){
 // DISPLAY THE NEW ADVICE AND ADVICE ID
 function displayAdvice(data){
     quote.textContent = data.advice
-    quoteNum.textContent = `Quote #0${data.slip_id}`
+    quoteNum.textContent = `Quote #0${data.id}`
     setTimeout(()=>{
         diceFace.classList.remove('loading')
         wait = false
