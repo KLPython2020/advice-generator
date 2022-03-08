@@ -50,6 +50,10 @@ main{
     color: var(--quote);
     font-weight: var(--font-weight);
 }
+.loading{
+    animation: var(--animation-spin);
+    pointer-events: none;
+}
 #button{
     display: grid;
     width: 50px;
