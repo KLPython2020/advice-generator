@@ -30,8 +30,8 @@ main{
 
 .container{
     text-align: center;
-    height: 300px;
-    max-width: 400px;
+    height: 400px;
+    max-width: 500px;
     background-color: var(--card-bg);
     margin: auto;
     padding: 1em 2em;
@@ -50,6 +50,9 @@ main{
     color: var(--quote);
     font-weight: var(--font-weight);
 }
+#quote-footer{
+    margin-bottom: 2em;
+}
 .loading{
     animation: var(--animation-spin);
     pointer-events: none;
@@ -60,7 +63,7 @@ main{
     height: 50px;
     border-radius: 50px;
     background-color: var(--quote-num);
-    margin-top: 300px;
+    margin-top: 400px;
     position: absolute;
 }
 .button{

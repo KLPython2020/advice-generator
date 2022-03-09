@@ -20,8 +20,8 @@ async function getAdvice(){
 }
 // DISPLAY THE NEW ADVICE AND ADVICE ID
 function displayAdvice(data){
-    quote.textContent = data.advice
-    quoteNum.textContent = `Advice #0${data.id}`
+    quote.innerHTML = `<h1>${data.advice}</h1>`
+    quoteNum.innerHTML = `<p>Advice #0${data.id}<p>`
     setTimeout(()=>{
         diceFace.classList.remove('loading')
         wait = false
